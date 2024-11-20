@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="./login.html">Click me to login</a>
+    <img src="./images/cody-scott-milewski-aCnkRlBD0i4-unsplash.jpg" height="400" alt="">
+
+    <script>
+        //nested for loop
+        //days and weeks 
+        /*
+                for (let i = 1; i <= 4; i++) {
+                    console.log("Week ", i)
+                    for (let j = 1; j <= 7; j++) {
+                        console.log("Day ", i)
+                    }
+                }
+
+
+           */ //square pattern
+        /*
+                for (let i = 0; i <= 4; i++) { // Outer loop for rows
+                    let row = '';
+                    for (let j = 0; j <= 4; j++) { // Inner loop for columns
+                        row += '* '; // Add a star in each column
+                    }
+                    console.log(row); // Print the row after the inner loop completes
+                }
+
+                //rectangle pattern
+                for (let i = 0; i <= 4; i++) { // Outer loop for rows
+                    let row = '';
+                    for (let j = 0; j <= 7; j++) { // Inner loop for columns
+                        row += '* '; // Add a star in each column
+                    }
+                    console.log(row); // Print the row after the inner loop completes
+                }
+                    
+
+
+
+        for (let i = 1; i <= 5; i++) { // Outer loop for rows
+            let row = ''; // Initialize an empty string for each row
+            for (let j = 1; j <= i; j++) { // Inner loop for stars
+                row += '*'; // Add a star for each column in the row
+            }
+            console.log(row); // Print the row after the inner loop completes
+        }
+            */
+        for (let i = 5; i >= 1; i--) { // Outer loop for rows
+            let row = ''; // Initialize an empty string for each row
+            for (let j = 1; j <= i; j++) { // Inner loop for stars
+                row += '*'; // Add a star for each column in the row
+            }
+            console.log(row); // Print the row after the inner loop completes
+        }
+
+        let rows = 5;
+
+        for (let i = rows; i >= 1; i--) {
+            // Print leading spaces
+            let spaces = '';
+            for (let j = 1; j <= rows - i; j++) {
+                spaces += ' '; // Add space before stars
+            }
+
+            // Print stars
+            let stars = '';
+            for (let k = 1; k <= (2 * i - 1); k++) {
+                stars += '*'; // Add star to the string
+            }
+
+            // Combine spaces and stars and print the row
+            console.log(spaces + stars);
+        }
+    </script>
+</body>
+
+</html>
